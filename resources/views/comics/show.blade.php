@@ -4,17 +4,17 @@
 <section id="comics-books">
   <div class="comics-container">
     <div class="info">
-      <h1>{{$movie['title']}}</h1>
+      <h1>{{$movie->title}}</h1>
       <div class="price">
         <div class="price-left">
-          <span>U.S. PRICE {{$movie['price']}}</span>
+          <span>U.S. PRICE {{$movie->price}}</span>
           <span>AVAILABLE</span>
         </div>
         <div class="price-right">
           <span>Check Availability</span>
         </div>
       </div>
-      <p>{{$movie['description']}}</p>
+      <p>{{$movie->description}}</p>
     </div>
     <div class="banner">
       <img src="{{ Vite::asset('resources/img/adv.jpg') }}" alt="">
@@ -30,11 +30,7 @@
           <p>Art by:</p>
         </div>
         <div class="list">
-          <ul>
-            @foreach($movie['artists'] as $movie['artist'])
-            <li>{{$movie['artist']}},</li>
-            @endforeach
-          </ul>
+           <p>{{$movie->artists}}</p>
         </div>
       </div>
       <div class="art">
@@ -42,11 +38,7 @@
           <p>Written by:</p>
         </div>
         <div class="list">
-          <ul>
-            @foreach($movie['writers'] as $movie['writer'])
-            <li>{{$movie['writer']}},</li>
-            @endforeach
-          </ul>
+          <p>{{$movie->writers}}</p>
         </div>
       </div>
       <div>
@@ -60,7 +52,7 @@
           <p>Series:</p>
         </div>
         <div class="list">
-          <p>{{$movie['series']}}</p>
+          <p>{{$movie->series}}</p>
         </div>
       </div>
       <div class="art">
@@ -68,7 +60,7 @@
           <p>U.S Price:</p>
         </div>
         <div class="list">
-          <p> {{$movie['price']}}</p>
+          <p> {{$movie->price}}</p>
         </div>
       </div>
       <div class="art">
@@ -76,7 +68,7 @@
           <p>On Sale Date:</p>
         </div>
         <div class="list">
-          <p>{{$movie['sale_date']}}</p>
+          <p>{{$movie->sale_date}}</p>
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ComicController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,16 +18,6 @@ Route::get('/', function () {
     return view('layouts.main');
 });
 
-Route::get('movies', function () {
-    $movies = config('comics');
-    // dd($movies);
-    return view('movies', compact('movies'));
-})->name('movies');
+Route::get('comics', [ComicController::class, 'index'])->name('comics.index');
 
-Route::get('comics/{index}', function ($index) {
-    $movies = config('comics');
-    $movie = $movies[$index];
-    // dd($movie);
-
-    return view('comics', compact('movie'));
-})->name('comics');
+Route::get('comics/{movie}', [ComicController::class, 'show'])->name('comics.show');
