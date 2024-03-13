@@ -1,0 +1,61 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+  padding-top: 30px;
+
+}
+
+.flex2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  gap: 20px;
+}
+
+footer {
+  color: white;
+  max-height: 400px;
+}
+
+footer li {
+  margin: 6px 0;
+  font-size: 0.8rem;
+}
+
+.footer-top {
+
+  gap: 20px;
+  background-image: url(../img/footer-bg.jpg);
+  height: 400px;
+
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+  text-align: start;
+}
+
+.footer-bottom {
+  height: 80px;
+  background-color: #303030;
+}
+
+button {
+  color: white;
+  background-color: #303030;
+  padding: 15px;
+  border: 2px solid #0282F9;
+
+}

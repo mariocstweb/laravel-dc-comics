@@ -1,0 +1,59 @@
+#comics-books{
+  background-color: #fff;
+  height: 400px;
+
+  .comics-container{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 80px 0;
+    gap: 30px;
+  }
+
+  .info{
+    flex-basis: 60%;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  .banner{
+    flex-basis: 40%;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  h1{
+    margin-bottom: 20px;
+  }
+
+  p{
+    margin-top: 20px;
+    text-align: justify;
+
+  }
+
+  .price{
+    display:flex;
+    background-color: #55BA59;
+    border-bottom: 1px solid black;
+  }
+
+  .price-left{
+    flex-basis: 70%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    border-right: 1px solid;
+  }
+  .price-right{
+    flex-basis: 30%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  span{
+    padding: 10px 20px
+  }
+}
