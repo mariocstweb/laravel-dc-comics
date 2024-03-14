@@ -4,17 +4,17 @@
 <section id="comics-books">
   <div class="comics-container">
     <div class="info">
-      <h1>{{$movie->title}}</h1>
+      <h1>{{$comic->title}}</h1>
       <div class="price">
         <div class="price-left">
-          <span>U.S. PRICE {{$movie->price}}</span>
+          <span>U.S. PRICE {{$comic->price}}</span>
           <span>AVAILABLE</span>
         </div>
         <div class="price-right">
           <span>Check Availability</span>
         </div>
       </div>
-      <p>{{$movie->description}}</p>
+      <p>{{$comic->description}}</p>
     </div>
     <div class="banner">
       <img src="{{ Vite::asset('resources/img/adv.jpg') }}" alt="">
@@ -30,7 +30,7 @@
           <p>Art by:</p>
         </div>
         <div class="list">
-           <p>{{$movie->artists}}</p>
+           <p>{{$comic->artists}}</p>
         </div>
       </div>
       <div class="art">
@@ -38,7 +38,7 @@
           <p>Written by:</p>
         </div>
         <div class="list">
-          <p>{{$movie->writers}}</p>
+          <p>{{$comic->writers}}</p>
         </div>
       </div>
       <div>
@@ -52,7 +52,7 @@
           <p>Series:</p>
         </div>
         <div class="list">
-          <p>{{$movie->series}}</p>
+          <p>{{$comic->series}}</p>
         </div>
       </div>
       <div class="art">
@@ -60,7 +60,7 @@
           <p>U.S Price:</p>
         </div>
         <div class="list">
-          <p> {{$movie->price}}</p>
+          <p> {{$comic->price}}</p>
         </div>
       </div>
       <div class="art">
@@ -68,7 +68,7 @@
           <p>On Sale Date:</p>
         </div>
         <div class="list">
-          <p>{{$movie->sale_date}}</p>
+          <p>{{$comic->sale_date}}</p>
         </div>
       </div>
     </div>
