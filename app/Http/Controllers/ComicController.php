@@ -34,11 +34,11 @@ class ComicController extends Controller
     {
         $request->validate([
             'title' => 'required|string',
-            'descriptions' => 'required|string',
+            'description' => 'required|string',
             'thumb' => 'required|url:http,https',
             'price' => 'required|string',
             'series' => 'required|string',
-            'sale_date' => 'required|string',
+            'sale_date' => 'required|date',
             'type' => 'required|string',
             'artists' => 'required|string',
             'writers' => 'required|string'
