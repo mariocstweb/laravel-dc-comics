@@ -61,7 +61,8 @@
       </div>
     </div>
     <div class="d-flex justify-content-center p-3">
-      <button class="btn btn-primary">Aggiungi</button>
+      <button type="submit" class="btn btn-primary me-3">Aggiungi</button>
+      <button type="reset" class="btn btn-outline-light">Reset</button>
     </div>
   </form>
 </div>
