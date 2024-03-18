@@ -73,5 +73,13 @@
       </div>
     </div>
   </div>
+  <div class="d-flex justify-content-center p-2 gap-3">
+    <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-primary">Modifica</a>
+    <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
+      @csrf
+      @method('DELETE')
+      <button type="submit" class="btn btn-danger">Elimina</button>
+    </form>
+  </div>
 </section>
 @endsection
